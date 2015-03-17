@@ -17,10 +17,13 @@ var five = require("johnny-five");
   });
 
   //led.on();
-  //led.color("#FFFFFF"); 
+  //led.color("#FFFFFF");
   });
 
+exports.nap = function(){
 
+  led.color("#FF0000")
+}
 
 
 exports.rgb = function(options,func){
@@ -30,13 +33,13 @@ exports.rgb = function(options,func){
 	else {
 
   if (options.life==true) {led.color("#00FF00");}
- 
-  if (options.death==true) {led.color("#FF0000");} }
- 
- 
 
-  //console.log(options) 
-	
+  if (options.death==true) {led.color("#FF0000");} }
+
+
+
+  //console.log(options)
+
 	setInterval(function() {
 
 led.off();

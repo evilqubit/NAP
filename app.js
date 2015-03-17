@@ -9,10 +9,6 @@ var controller = require('./controller.js');
 
 
 
-
-
-
-
 //Twitter API Config
 var twit = new twitter(config);
 
@@ -37,7 +33,7 @@ twit.verifyCredentials(function (err, data) {
 				var hashtag = hashtags[i].text.toLowerCase();
 				if( hashtag == 'life') options.life = true;
 				if( hashtag == 'death') options.death = true;
-				
+
 
 			}
 
@@ -45,7 +41,7 @@ twit.verifyCredentials(function (err, data) {
 
 				console.log(options);
 			})
-		
+
 		}
 	});
 

@@ -17,9 +17,12 @@
     "nodejs"
     ],
   "dependencies": {
-    "request":"*",
-    "ntwitter":"*",
-    "johnny-five":"~0.8.0"
+    "request":"2.37.0",
+    "ntwitter":"0.5.0",
+    "johnny-five":"0.8.1",
+    "cylon-api-http":"*",
+    "cylon-pebble":"*",
+    "cylon":"*"
   },
   "repository": {
     "type": "git",
